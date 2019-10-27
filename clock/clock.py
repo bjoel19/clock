@@ -15,7 +15,7 @@ def toswatch(a):
 
 
 def gettime():
-    return datetime.now(timezone.utc).time()
+    return datetime.now().time()
 
 
 def tostr(a):

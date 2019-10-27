@@ -15,7 +15,7 @@ while(not ctx.should_close()):
         time.sleep(1/60)
         t = clock.gettime()
         beats = clock.toswatch(t)
-        bimpy.begin("Swatch Time")
+        bimpy.begin("Local Swatch Time")
         bimpy.set_window_font_scale(2)
         bimpy.text("@{:.2f}".format(beats))
         bimpy.end()
