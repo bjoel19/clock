@@ -15,14 +15,14 @@ def toswatch(a):
 
 
 def gettime():
-    return datetime.now().time()
+    return datetime.now(timezone.utc).time()
 
 
 def tostr(a):
     return a.strftime("%H:%M:%S")
 
 def getdate():
-    return datetime.now().date()
+    return datetime.now(timezone.utc).date()
 
 def toWorld(a):
     d = a.strftime("%Y-%j")
@@ -75,4 +75,4 @@ def toWorld(a):
         month = "Worldsday"
         day = ""
     
-    return "{} {} {}".format(year, month, day)
+    return "{} {} {}".format(day, month, year)
