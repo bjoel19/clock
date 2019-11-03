@@ -1,6 +1,6 @@
 import time
 import bimpy
-import clock
+import functions
 
 ctx = bimpy.Context()
 
